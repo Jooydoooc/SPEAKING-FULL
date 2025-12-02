@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IELTS Speaking – Film & Job Worksheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    h1, h2 {
+      margin: 8px 0;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      margin-bottom: 6px;
+    }
+    p {
+      margin: 6px 0 10px;
+      line-height: 1.4;
+    }
+    .question-text {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .mcq-option {
+      margin: 4px 0;
+      display: block;
+    }
+    textarea {
+      width: 100%;
+      min-height: 70px;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      font-family: inherit;
+      font-size: 14px;
+    }
+    button {
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    button.primary {
+      background: #2563eb;
+      color: white;
+    }
+    button.secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+    .feedback {
+      margin-top: 6px;
+      font-size: 13px;
+    }
+    .feedback.ok {
+      color: #16a34a;
+    }
+    .feedback.warn {
+      color: #b45309;
+    }
+    .feedback.error {
+      color: #b91c1c;
+    }
+    .score-box {
+      margin-top: 12px;
+      font-weight: 600;
+    }
+    .highlight {
+      font-weight: 600;
+    }
+    .small-note {
+      font-size: 12px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>IELTS Speaking – Film & Job Worksheet</h1>
+
+    <!-- WARM-UP VOCAB -->
+    <div class="card">
+      <span class="badge">Warm-up</span>
+      <h2>Part 1 Vocabulary – Jobs & Films</h2>
+      <p>Choose the <span class="highlight">best collocation</span> in each sentence.</p>
+
+      <div class="mcq-block" data-question="1" data-answer="b">
+        <div class="question-text">
+          1. I work as an English teacher and I mainly ______ students for international exams.
+        </div>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-1" value="a"> fix
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-1" value="b"> prepare
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-1" value="c"> repair
+        </label>
+        <div class="feedback" id="fb-mcq-1"></div>
+      </div>
+
+      <div class="mcq-block" data-question="2" data-answer="c">
+        <div class="question-text">2. There was a lot of ______ around the new superhero film.</div>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-2" value="a"> noise
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-2" value="b"> shock
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-2" value="c"> hype
+        </label>
+        <div class="feedback" id="fb-mcq-2"></div>
+      </div>
+
+      <div class="mcq-block" data-question="3" data-answer="a">
+        <div class="question-text">3. The film didn’t ______ up to my expectations at all.</div>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-3" value="a"> live
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-3" value="b"> make
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-3" value="c"> hold
+        </label>
+        <div class="feedback" id="fb-mcq-3"></div>
+      </div>
+
+      <div class="mcq-block" data-question="4" data-answer="b">
+        <div class="question-text">4. Actors often have a very ______ schedule and travel a lot.</div>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-4" value="a"> silent
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-4" value="b"> exhausting
+        </label>
+        <label class="mcq-option">
+          <input type="radio" name="mcq-4" value="c"> cheap
+        </label>
+        <div class="feedback" id="fb-mcq-4"></div>
+      </div>
+
+      <button class="primary" id="check-mcq">Check vocabulary</button>
+      <div class="score-box" id="mcq-score"></div>
+    </div>
+
+    <!-- SENTENCE PRACTICE -->
+    <div class="card">
+      <span class="badge">Grammar & sentences</span>
+      <h2>Sentence Practice – Speaking Structures</h2>
+      <p class="small-note">
+        Write <strong>one sentence</strong for each task.
+        The server will check the target word, word count and basic structure.
+      </p>
+
+      <div class="sentence-block">
+        <div class="question-text">
+          1. Use <span class="highlight">because</span> to explain why you chose your job or major.
+        </div>
+        <textarea id="sent-1" placeholder="Example: I chose this job because it allows me to help students improve their English."></textarea>
+        <div class="feedback" id="fb-sent-1"></div>
+      </div>
+
+      <div class="sentence-block">
+        <div class="question-text">
+          2. Use <span class="highlight">although</span> to talk about a film you were disappointed in.
+        </div>
+        <textarea id="sent-2" placeholder="Example: Although the trailer looked amazing, the film itself was a real let-down."></textarea>
+        <div class="feedback" id="fb-sent-2"></div>
+      </div>
+
+      <div class="sentence-block">
+        <div class="question-text">
+          3. Use the <span class="highlight">second conditional</span> to talk about actors’ lives
+          (use “if” + past, “would” + verb).
+        </div>
+        <textarea id="sent-3" placeholder="Example: If I were an actor, I would travel a lot but I would have very little privacy."></textarea>
+        <div class="feedback" id="fb-sent-3"></div>
+      </div>
+
+      <button class="primary" id="check-sentences">Check my sentences</button>
+      <button class="secondary" id="clear-sentences">Clear</button>
+      <div class="score-box" id="sent-score"></div>
+    </div>
+  </div>
+
+  <script>
+    // ===== VOCAB MCQ (front-end only) =====
+    document.getElementById("check-mcq").addEventListener("click", function () {
+      const blocks = document.querySelectorAll(".mcq-block");
+      let correct = 0;
+
+      blocks.forEach(block => {
+        const qNum = block.getAttribute("data-question");
+        const correctAns = block.getAttribute("data-answer");
+        const chosen = block.querySelector("input[type='radio']:checked");
+        const fb = document.getElementById("fb-mcq-" + qNum);
+
+        if (!chosen) {
+          fb.textContent = "❗ Choose an option.";
+          fb.className = "feedback warn";
+          return;
+        }
+
+        if (chosen.value === correctAns) {
+          fb.textContent = "✅ Correct!";
+          fb.className = "feedback ok";
+          correct++;
+        } else {
+          fb.textContent = "❌ Not quite. Check the collocation again.";
+          fb.className = "feedback error";
+        }
+      });
+
+      document.getElementById("mcq-score").textContent =
+        "Your vocabulary score: " + correct + " / " + blocks.length;
+    });
+
+    // ===== SENTENCE CHECKER (calls /api/check-sentences) =====
+    document.getElementById("check-sentences").addEventListener("click", async function () {
+      const s1 = document.getElementById("sent-1").value;
+      const s2 = document.getElementById("sent-2").value;
+      const s3 = document.getElementById("sent-3").value;
+
+      // clear previous feedback
+      ["fb-sent-1", "fb-sent-2", "fb-sent-3", "sent-score"].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = "";
+        el.className = "feedback";
+      });
+
+      try {
+        const response = await fetch("/api/check-sentences", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            sentences: {
+              s1,
+              s2,
+              s3
+            }
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error("Server error: " + response.status);
+        }
+
+        const data = await response.json();
+        const { scores, total, maxTotal, percent } = data;
+
+        // update feedback for each sentence
+        if (scores && scores.s1) {
+          const fb1 = document.getElementById("fb-sent-1");
+          fb1.innerHTML = scores.s1.messages.join("<br>");
+          fb1.className = "feedback " + scores.s1.level;
+        }
+        if (scores && scores.s2) {
+          const fb2 = document.getElementById("fb-sent-2");
+          fb2.innerHTML = scores.s2.messages.join("<br>");
+          fb2.className = "feedback " + scores.s2.level;
+        }
+        if (scores && scores.s3) {
+          const fb3 = document.getElementById("fb-sent-3");
+          fb3.innerHTML = scores.s3.messages.join("<br>");
+          fb3.className = "feedback " + scores.s3.level;
+        }
+
+        const scoreBox = document.getElementById("sent-score");
+        scoreBox.textContent =
+          "Sentence score: " + total + " / " + maxTotal + " (" + percent + "%)";
+      } catch (err) {
+        const scoreBox = document.getElementById("sent-score");
+        scoreBox.textContent = "Error: " + err.message;
+      }
+    });
+
+    document.getElementById("clear-sentences").addEventListener("click", function () {
+      ["sent-1", "sent-2", "sent-3"].forEach(id => {
+        document.getElementById(id).value = "";
+      });
+      ["fb-sent-1", "fb-sent-2", "fb-sent-3", "sent-score"].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = "";
+        el.className = "feedback";
+      });
+    });
+  </script>
+</body>
+</html>
